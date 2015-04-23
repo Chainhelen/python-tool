@@ -1,0 +1,9 @@
+GET /levels/coding/1 HTTP/1.1
+Host: www.hackthis.co.uk
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4,ko;q=0.2
+Cookie: PHPSESSID=1b9lrds74ccrgbiaioi7qpn4l0; _gat=1; _ga=GA1.3.755795611.1428755562; autologin=%EB%7D%A2%EC1%5D%23%CF%1B-%B5%C4%10%3A%8E%F8%21%0F%F3w%A6%D9%FE%BFQ%DB%DC%3DT%91%7F%CB%DB%1C%29%EC%D86%5DV%C9%D0%ED%BF%BE%0E%BC%26%11y%191%12%3E%E8%29%94%FC%8D%7EB%22%F6%95; member=1
