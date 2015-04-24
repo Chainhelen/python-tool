@@ -1,25 +1,24 @@
-#import header
-#import requests
+import header
+import requests
 import sys
+from pyquery import PyQuery as pyq
 #import codecs
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-#headers =  header.getHeader("headerdata")
-#url = "https://www.hackthis.co.uk/levels/coding/1"
-#payload = {}
-#r = requests.get(url, headers = headers);
-#f = codecs.open("out","w",'utf-8')
-#f.write(r.text);
-#f.close();
+#Gets
+headers =  header.getHeader("headerdata")
+url = "https://www.hackthis.co.uk/levels/coding/1"
+r = requests.get(url, headers = headers);
 
-f = open('out')
-data = f.read().strip('\n');
-f.close();
+#pyq process
+jq = pyq(r.text);
+li = jq("textarea").text().split(', ');
+li.sort();
+payload = {'answer':', '.join(li)};
 
-print data.find("textarea")
-
-#li = data.split(', ');
-#li.sort();
-
+print payload
+#Post
+r = requests.post(url, data = payload, headers = headers);
+#print r.text

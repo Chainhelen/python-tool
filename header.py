@@ -3,6 +3,7 @@ def getHeader(filename):
     dict = {}
     while 1:
          line = file.readline().strip('\n');
+         line = line.strip('\r');
          if not line:
              break;
          if line.find(':') != -1:
